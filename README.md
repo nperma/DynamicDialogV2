@@ -38,7 +38,7 @@ This shows 3 lines of animated dialog with a background, avatar, and sound effec
 
 ```js
 // must defined player
-    displayDialog(player, "text1", "°(text2;2;random.pop)", "text3", "textures/dialogue/background", null, "dialogue.txt2");
+displayDialog(player, "text1", "°(text2;2;random.pop)", "text3", "textures/dialogue/background", null, "dialogue.txt2");
 ````
 
 ---
