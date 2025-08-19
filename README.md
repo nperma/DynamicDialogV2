@@ -6,16 +6,12 @@
 
 ## ScriptEventId
 ```
-
-dialog\:text
-
+dialog:text
 ```
 
 ### Command
 ```
-
-/scriptevent dialog\:text text1|text2|text3|background|avatar|sound
-
+/scriptevent dialog:text text1|text2|text3|background|avatar|sound
 ```
 
 - **text1** → First line of dialog (supports dynamic text format)  
@@ -23,7 +19,7 @@ dialog\:text
 - **text3** → Third line of dialog (optional)  
 - **background** → Background texture path (default: `textures/ui/greyBorder`)  
 - **avatar** → Avatar texture path (default: `textures/dialogue/default`)  
-- **sound** → Default sound effect (default: `dialogue.txt1`)  
+- **sound** → global sound effect (default: `dialogue.txt1`)  
 
 ---
 
@@ -31,9 +27,7 @@ dialog\:text
 
 ### In-Game
 ```
-
-/scriptevent dialog\:text Hello there!|Welcome to my world.|Enjoy your stay.|textures/dialogue/background|textures/dialogue/default|random.pop
-
+/scriptevent dialog:text Hello there!|Welcome to my world.|Enjoy your stay.|textures/dialogue/background|textures/dialogue/default|random.pop
 ````
 
 This shows 3 lines of animated dialog with a background, avatar, and sound effect.
@@ -43,23 +37,8 @@ This shows 3 lines of animated dialog with a background, avatar, and sound effec
 ## Example (Code Reference)
 
 ```js
-import { system } from "@minecraft/server";
-
-system.afterEvents.scriptEventReceive.subscribe(async (e) => {
-  if (e.id === "dialog:text") {
-    const player = e.sourceEntity;
-    const [
-      text1 = "Hi+(,;20)°(my name;1)+( §e;1)°(Nperma;1)",
-      text2 = "+(This is DynamicDialogV2;20)",
-      text3 = "+(Powered by EssPlugin;30)",
-      background = "textures/dialogue/background",
-      avatar = "textures/dialogue/default",
-      sound = "dialogue.txt1"
-    ] = e.message.split("|");
-
-    displayDialog(player, text1, text2, text3, background, avatar, sound);
-  }
-});
+// must defined player
+    displayDialog(player, "text1", "°(text2;2;random.pop)", "text3", "textures/dialogue/background", null, "dialogue.txt2");
 ````
 
 ---
