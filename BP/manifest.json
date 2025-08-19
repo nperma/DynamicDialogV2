@@ -1,0 +1,55 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "Nperma"
+        ],
+        "license": "MIT",
+        "url": "https://github.com/nperma/DynamicDialogV2",
+        "generated_with": {}
+    },
+    "header": {
+        "name": "DynamicDialogV2 [EssPlugin]",
+        "description": "Dialogue text §e1.21.100+",
+        "min_engine_version": [
+            1,
+            21,
+            100
+        ],
+        "uuid": "a4a59566-e822-4fb8-93da-76527197e1e3",
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "behavior",
+            "type": "script",
+            "uuid": "75455869-df9d-4018-dd40-c0169d545578",
+            "version": [
+                1,
+                0,
+                0
+            ],
+            "language": "javascript",
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.0.0"
+        },
+        {
+            "uuid": "81c10216-c2e2-446b-96d2-c8110e14604e",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "subpacks": []
+}
