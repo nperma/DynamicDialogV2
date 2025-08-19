@@ -1,0 +1,49 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "Nperma"
+        ],
+        "license": "MIT",
+        "url": "https://github.com/nperma/DynamicDialogV2",
+        "generated_with": {}
+    },
+    "header": {
+        "name": "DynamicDialogV2 [RP]",
+        "description": "Resource Pack",
+        "min_engine_version": [
+            1,
+            21,
+            100
+        ],
+        "uuid": "81c10216-c2e2-446b-96d2-c8110e14604e",
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "resource",
+            "type": "resources",
+            "uuid": "8aa905e7-89be-4366-a050-36399b36ccda",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "a4a59566-e822-4fb8-93da-76527197e1e3",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "subpacks": []
+}
